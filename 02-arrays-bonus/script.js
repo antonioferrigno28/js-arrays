@@ -49,7 +49,30 @@ console.log(longNames);
 // 3. Rimuovi 'Ed' dall'array teachers
 
 //SOLUZIONE CICLO FOR
+//PER "i" che parte da 0 fino ad arrivare all'INDICE MASSIMO (MINORE di lunghezza array OPPURE uguale alunghezza array - 1)
+for (i = 0; i < teachers.length; i++) {
+  //SE il contenuto del cassetto è "Ed"
+  if (teachers[i] === "Ed") {
+    //Rimuovi il cassetto corrente (splice(i,1)=parti dalla posizione i e rimuovi un cassetto )
+    teachers.splice(i, 1);
+  }
+}
+//Stampa il nuovo array senza "Ed"
+console.log(teachers);
 
 //SOLUZIONE EASY
+//Sapendo che Ed si trova al secondo posto dell'array
+//Parti da indice 1 e rimuovi un cassetto
 //teachers.splice(1, 1);
+//Stampa il nuovo array
 //console.log(teachers);
+
+//OPPURE
+//Creo un nuovo array filteredTeachers che contiene il risultato di .filter dell'array teachers
+//La funzione viene chiamata per ogni elemento dell'array teachers
+//const filteredTeachers = teachers.filter(function (teacher) {
+//Se il nome dell'insegnante (teacher) NON è "Ed" allora l'elemento viene aggiunto all'array
+//return teacher !== "Ed";
+//});
+//Stampa array filtrato
+//console.log(filteredTeachers);
