@@ -11,8 +11,8 @@ console.log(teachers);
 //dichiarazione nuovo array ordine invertito (vuoto)
 let teachersReverse = [];
 //ciclo for per invertire l'array
-//PER "i" che parte dalla lunghezza dell'array fino ad arrivare a 0 (sottraendo grazie ad i--)
-for (let i = teachers.length; i >= 0; i--) {
+//PER "i" che parte dalla lunghezza dell'array MENO UNO (per matchare l'indice) fino ad arrivare a 0 (sottraendo grazie ad i--)
+for (let i = teachers.length - 1; i >= 0; i--) {
   //pusho il contenuto del cassetto dell'array teachers in teachersReverse (push aggiunge ALL'ULTIMA posizione dell'array)
   teachersReverse.push(teachers[i]);
 }
