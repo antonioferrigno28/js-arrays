@@ -4,10 +4,16 @@ const teachers = ["Nathan", "Ed", "Fabio", "Phil", "Carlo", "Lewis", "Luca"]; //
 // e salva il risultato nella variabile reversedTeachers
 
 //SOLUZIONE CICLO FOR
+
+//dichiarazione nuovo array ordine invertito (vuoto)
 let teachersReverse = [];
+//ciclo for per invertire l'array
+//PER "i" che parte dalla lunghezza dell'array fino ad arrivare a 0 (sottraendo grazie ad i--)
 for (let i = teachers.length; i >= 0; i--) {
+  //pusho il contenuto del cassetto dell'array teachers in teachersReverse (push aggiunge ALL'ULTIMA posizione dell'array)
   teachersReverse.push(teachers[i]);
 }
+//stampo l'array invertito
 console.log(teachersReverse);
 
 //SOLUZIONE EASY
